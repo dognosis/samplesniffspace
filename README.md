@@ -1,7 +1,3 @@
-# Create the README content
-readme_content = """
-# Sample Data README
-
 ## Overview
 
 This README provides details about the sample data file `untitledDLC_resnet50_sniff_helmet4Jun20shuffle1_75000.csv`, which contains tracking data produced by the DeepLabCut (DLC) model `DLC_resnet50_sniff_helmet4Jun20shuffle1_75000`.
