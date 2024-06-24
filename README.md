@@ -60,61 +60,75 @@ This data can be used for analyzing the movement and behavior of the tracked bod
 - `acc_all_june20th.csv`: Contains data on the acceleration of the same body parts.
 - `velocity_all_june20th.csv`: Contains data on the velocity of the same body parts.
 
-EEG Data Sample
-Overview
+# EEG Data Sample
+
+## Overview
 This document provides an overview and description of the EEG data collected in the sample dataset. The dataset includes timestamps, EEG measurements from various electrodes, trial markers indicating different trial states, and additional sensor data including accelerometer, gyroscope, and magnetometer readings.
 
-Data Description
-EEG Data
-Columns
+
+### EEG Data
+
+#### Columns
 The EEG dataset contains the following columns:
 
-Timestamp: The time at which the EEG data was recorded.
-Fz: EEG data from the Fz electrode.
-Cz: EEG data from the Cz electrode.
-T3: EEG data from the T3 electrode.
-T4: EEG data from the T4 electrode.
-P3: EEG data from the P3 electrode.
-P4: EEG data from the P4 electrode.
-Fp1: EEG data from the Fp1 electrode.
-Fp2: EEG data from the Fp2 electrode.
-trial_marker: Indicates the trial state. The values in this column can be:
-0: No sniff
-1: Sniffed control
-2: Sniffed target
-Sample Data
-Timestamp	Fz	Cz	T3	T4	P3	P4	Fp1	Fp2	trial_marker
-257312.878	17237.810547	9872.769531	1205.250000	-2459.570068	287.820007	-3004.889893	-2013.020020	-3410.820068	0
-257312.879	17254.500000	9836.480469	1177.219971	-2479.510010	265.739990	-3022.479980	-2048.830078	-3447.290039	0
-257312.880	17267.369141	9811.209961	1164.869995	-2496.000000	241.089996	-3042.510010	-2071.090088	-3471.800049	0
-257312.881	17277.529297	9795.240234	1155.189941	-2505.300049	223.919998	-3057.379883	-2084.300049	-3478.580078	0
-257312.882	17288.830078	9780.549805	1147.219971	-2514.459961	213.669998	-3074.739990	-2084.449951	-3493.070068	0
-Sensor Data
-Columns
+1. **Timestamp**: The time at which the EEG data was recorded.
+2. **Fz**: EEG data from the Fz electrode.
+3. **Cz**: EEG data from the Cz electrode.
+4. **T3**: EEG data from the T3 electrode.
+5. **T4**: EEG data from the T4 electrode.
+6. **P3**: EEG data from the P3 electrode.
+7. **P4**: EEG data from the P4 electrode.
+8. **Fp1**: EEG data from the Fp1 electrode.
+9. **Fp2**: EEG data from the Fp2 electrode.
+10. **trial_marker**: Indicates the trial state. The values in this column can be:
+    - `0`: No sniff
+    - `1`: Sniffed control
+    - `2`: Sniffed target
+
+#### Sample Data
+
+| Timestamp  |     Fz     |     Cz     |    T3     |    T4     |     P3     |     P4     |    Fp1     |    Fp2     | trial_marker |
+|------------|-------------|-------------|-----------|-----------|-------------|-------------|-----------|-----------|---------------|
+| 257312.878 | 17237.810547 | 9872.769531 | 1205.250000 | -2459.570068 | 287.820007  | -3004.889893 | -2013.020020 | -3410.820068 | 0             |
+| 257312.879 | 17254.500000 | 9836.480469 | 1177.219971 | -2479.510010 | 265.739990  | -3022.479980 | -2048.830078 | -3447.290039 | 0             |
+| 257312.880 | 17267.369141 | 9811.209961 | 1164.869995 | -2496.000000 | 241.089996  | -3042.510010 | -2071.090088 | -3471.800049 | 0             |
+| 257312.881 | 17277.529297 | 9795.240234 | 1155.189941 | -2505.300049 | 223.919998  | -3057.379883 | -2084.300049 | -3478.580078 | 0             |
+| 257312.882 | 17288.830078 | 9780.549805 | 1147.219971 | -2514.459961 | 213.669998  | -3074.739990 | -2084.449951 | -3493.070068 | 0             |
+
+### Sensor Data
+
+#### Columns
 The sensor dataset contains the following columns:
 
-Timestamp: The time at which the sensor data was recorded.
-Ax: Accelerometer data along the x-axis.
-Ay: Accelerometer data along the y-axis.
-Az: Accelerometer data along the z-axis.
-Gx: Gyroscope data along the x-axis.
-Gy: Gyroscope data along the y-axis.
-Gz: Gyroscope data along the z-axis.
-Mx: Magnetometer data along the x-axis.
-My: Magnetometer data along the y-axis.
-Mz: Magnetometer data along the z-axis.
-Sample Data
-Timestamp	Ax	Ay	Az	Gx	Gy	Gz	Mx	My	Mz
-257312.958586	129.503006	-524.661011	-652.151001	-58931.25	16563.75	89853.75	287.279999	-218.880005	252.320007
-257312.983614	28.792000	-481.106995	-620.552979	-62728.75	22758.75	111545.00	253.839996	-264.480011	243.199997
-257313.022463	-6.710000	-361.973999	-643.732971	-32182.50	9336.25	125177.50	247.759995	-300.959991	237.119995
-257313.076736	-161.893997	-396.683014	-715.591003	-6440.00	38788.75	133770.00	208.240005	-354.160004	221.919998
-257313.100406	3.294000	-381.372009	-706.502014	-6545.00	35306.25	94097.50	158.080002	-398.239990	255.360001
-Usage
-This dataset can be used to analyze the EEG responses during different trial states as well as to study movement and orientation data recorded simultaneously. The trial_marker column provides context for the EEG readings, indicating whether the subject was not sniffing (0), sniffing a control (1), or sniffing a target (2).
+1. **Timestamp**: The time at which the sensor data was recorded.
+2. **Ax**: Accelerometer data along the x-axis.
+3. **Ay**: Accelerometer data along the y-axis.
+4. **Az**: Accelerometer data along the z-axis.
+5. **Gx**: Gyroscope data along the x-axis.
+6. **Gy**: Gyroscope data along the y-axis.
+7. **Gz**: Gyroscope data along the z-axis.
+8. **Mx**: Magnetometer data along the x-axis.
+9. **My**: Magnetometer data along the y-axis.
+10. **Mz**: Magnetometer data along the z-axis.
 
-Notes
-All timestamps are rounded to three decimal places.
-EEG data is provided for eight electrodes: Fz, Cz, T3, T4, P3, P4, Fp1, and Fp2.
-Sensor data includes accelerometer, gyroscope, and magnetometer readings.
-The trial markers are essential for distinguishing between different trial conditions and should be used accordingly in any analysis.
+#### Sample Data
+
+| Timestamp      |      Ax       |      Ay       |      Az       |      Gx       |      Gy       |      Gz       |      Mx       |      My       |      Mz       |
+|----------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
+| 257312.958586  | 129.503006    | -524.661011   | -652.151001   | -58931.25     | 16563.75      | 89853.75      | 287.279999    | -218.880005   | 252.320007    |
+| 257312.983614  | 28.792000     | -481.106995   | -620.552979   | -62728.75     | 22758.75      | 111545.00     | 253.839996    | -264.480011   | 243.199997    |
+| 257313.022463  | -6.710000     | -361.973999   | -643.732971   | -32182.50     | 9336.25       | 125177.50     | 247.759995    | -300.959991   | 237.119995    |
+| 257313.076736  | -161.893997   | -396.683014   | -715.591003   | -6440.00      | 38788.75      | 133770.00     | 208.240005    | -354.160004   | 221.919998    |
+| 257313.100406  | 3.294000      | -381.372009   | -706.502014   | -6545.00      | 35306.25      | 94097.50      | 158.080002    | -398.239990   | 255.360001    |
+
+## Usage
+This dataset can be used to analyze the EEG responses during different trial states as well as to study movement and orientation data recorded simultaneously. The `trial_marker` column provides context for the EEG readings, indicating whether the subject was not sniffing (`0`), sniffing a control (`1`), or sniffing a target (`2`).
+
+## Notes
+- All timestamps are rounded to three decimal places.
+- EEG data is provided for eight electrodes: Fz, Cz, T3, T4, P3, P4, Fp1, and Fp2.
+- Sensor data includes accelerometer, gyroscope, and magnetometer readings.
+- The trial markers are essential for distinguishing between different trial conditions and should be used accordingly in any analysis.
+
+## Acknowledgements
+Please cite this dataset appropriately if used in any publications or presentations.
